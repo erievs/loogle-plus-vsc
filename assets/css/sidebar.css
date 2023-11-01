@@ -1,0 +1,35 @@
+/* Custom styles for sidenav */
+.sidenav-fixed {
+    border: none;
+    box-shadow: none;
+    position: fixed;
+    top: 117px;
+    left: 0;
+    height: 100%;
+    background-color: #ECEFF1;
+    color: black;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    width: 240px;
+}
+
+.sidenav .material-icons {
+    font-size: 32px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.sidenav li a {
+    font-family: 'Product Sans', 'Open Sans', sans-serif; /* Use Product Sans if available, otherwise a font similar to Open Sans */
+    font-size: 16.5px;
+    display: flex;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+}
+
+.sidenav li a span {
+    margin-left: 10px;
+}

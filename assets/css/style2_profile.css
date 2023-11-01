@@ -1,0 +1,521 @@
+
+        /* Remove the blue outline when text is inputted */
+/* Remove the blue outline on focused input fields in Materialize */
+input[type="text"]:focus:not([readonly]),
+input[type="password"]:focus:not([readonly]),
+input[type="email"]:focus:not([readonly]),
+input[type="url"]:focus:not([readonly]),
+input[type="time"]:focus:not([readonly]),
+input[type="date"]:focus:not([readonly]),
+input[type="datetime-local"]:focus:not([readonly]),
+input[type="tel"]:focus:not([readonly]),
+input[type="number"]:focus:not([readonly]),
+input[type="search"]:focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+    border-color: #ffff;
+    box-shadow: none;
+}
+
+.post img {
+    max-width: 100%; /* Make the image fit within the container */
+    max-height: 100%; /* Allow image to grow to fit container height */
+    object-fit: contain; /* Maintain image aspect ratio */
+}
+
+
+
+        .body {
+            font-family: 'Product Sans', 'Open Sans', sans-serif; /* Use Product Sans if available, otherwise a font similar to Open Sans */
+        }
+
+        .post {
+            font-family: 'Product Sans', 'Open Sans', sans-serif; /* Use Product Sans if available, otherwise a font similar to Open Sans */
+            position: relative;
+            
+        }
+
+        .username {
+            font-family: 'Product Sans', 'Open Sans', sans-serif; /* Use Product Sans if available, otherwise a font similar to Open Sans */
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .no-background {
+            font-family: 'Product Sans', 'Open Sans', sans-serif; /* Use Product Sans if available, otherwise a font similar to Open Sans */
+            background-color: transparent !important;
+           
+        }
+
+        .input-box {
+            border-color: #ffff;
+    box-shadow: none;
+        }
+
+        /* Add these styles to your CSS or style tag */
+
+/* Style the modal */
+/* Add these styles to your CSS or style tag */
+
+/* Style the modal */
+
+element {
+	z-index: 1003;
+	display: block;
+	opacity: 1;
+	top: 159px;
+	transform: scaleX(1) scaleY(1);
+}
+.modal {
+    top: 28px;
+    max-width: 560px; /* Adjust the width as needed */
+    padding: 20px;
+    border-radius: 5px;
+    height: 523px; /* Adjust the height as needed */
+    margin-top: 159px; /* Add margin-top to move the modal down */
+}
+
+/* Style the modal content */
+.modal-content textarea {
+    outline: none;
+    resize: none;
+    border: none;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    height: 250px; /* Adjust the height as needed */
+}
+input:focus {
+  outline: none;
+}
+
+input:focus .a {outline:none;}
+
+
+/* Style the modal username */
+.modal-username {
+    font-family: 'Product Sans', 'Open Sans', sans-serif; /* Use Product Sans if available, otherwise a font similar to Open Sans */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Style the modal textarea */
+.modal-content textarea {
+    font-family: 'Product Sans', 'Open Sans', sans-serif; /* Use Product Sans if available, otherwise a font similar to Open Sans */
+    resize: none;
+    border: none;
+    margin: 0;
+    font: color black;
+    padding: 10px;
+    width: 100%;
+    height: 200px; /* Adjust the height as needed */
+}
+
+/* Style the modal buttons */
+/* Positioning the cancel and post buttons on the bottom right */
+.modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px; /* Adjust the value as needed */
+}
+
+/* Adjust the position of the modal buttons */
+.modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    bottom: 10px; /* Adjust the value as needed */
+    right: 20px; /* Adjust the value as needed */
+}
+
+.post {
+    max-width: 500px;
+    font-family: 'Product Sans', 'Open Sans', sans-serif;
+    position: relative;
+
+    /* Other styles... */
+}
+
+
+
+/* Adjust the position of the image-link container */
+.image-link-container {
+
+    position: absolute;
+    bottom: 60px; /* Adjust the value as needed */
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+/* Style the "Write Post" button */
+
+/* Rest of your existing styles... */
+/* Apply the new style only to database-retrieved posts */
+/* Apply the new style only to database-retrieved posts */
+/* Apply the new style only to database-retrieved posts */
+
+
+/* Additional styling for container layout */
+/* Additional styling for container layout */
+/* Additional styling for container layout */
+.container {
+    max-width: 1300px;
+    display: 1350px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    left: -100px;
+    width: 1450px;
+    display: flex;
+    flex-wrap: none;
+    justify-content: center;
+}
+
+.left-column, .right-column {
+    flex: 1;
+    left: -100px;
+    padding: 10px;
+}
+
+/* You can adjust these as needed */
+.left-posts, .right-posts {
+    flex: 1;
+    left: -10330px;
+    width: 750px; /* Increase the width to prevent overlap */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adjust the gap between posts */
+}
+
+.right-posts {
+    left: -5030px;
+}
+
+.post img {
+    width: 100%; /* Make images take up 100% of the post width */
+    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+    object-fit: cover; /* Stretch the image to cover the entire container */
+}
+
+.database-post {
+    width: 700px;
+    min-height: 100px;
+    padding: 20px; /* Increase the padding for better spacing */
+    margin-bottom: 30px; /* Increase the margin for better spacing */
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    /* Other styles... */
+}
+
+.post-button {
+    position: fixed;
+    bottom: 20px; /* Adjust the distance from the bottom */
+    right: 20px; /* Adjust the distance from the right */
+    border-radius: 50%;
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
+    z-index: 999; /* Ensure the button appears above other content */
+}
+
+/* Apply the new style to input post */
+/* Apply the new style to input post */
+/* Apply the new style to input post */
+/* Apply the new style to input post */
+.container .database-post .input {
+    width: 100%;
+    height: 3350px;
+    border: none;
+    resize: none;
+    font-family: 'Product Sans', 'Open Sans', sans-serif;
+    padding: 10px;
+    margin: 0;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+/* Add this to your existing CSS */
+#linkModal.modal {
+
+
+
+    border-radius: 0; /* Remove rounded corners */
+
+
+}
+/* Add this to your existing CSS */
+.modal {
+    border-radius: 0; /* Remove rounded corners */
+  
+}
+
+/* Position the fixed button in the bottom right */
+.modal-trigger post-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.database-post.input {
+   
+    max-height: 100px; /* Set a maximum width to prevent it from getting too small */
+    height: 100px; /* Adjust the height as needed */
+    border: none; /* Remove the border */
+    border-bottom: 1px solid transparent; /* Add a transparent border-bottom */
+}
+
+/* Adjust the input height as needed */
+.database-post.input input {
+    width: 100%;
+    height: 10px; /* Allow the input to adjust its height based on content */
+    border: none; /* Remove the border */
+    border-bottom: none; /* Remove the underline */
+    resize: none;
+    font-family: 'Product Sans', 'Open Sans', sans-serif;
+    padding: 10px;
+    margin: 0;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    outline: none; /* Remove the outline when focused */
+    
+}
+.post {
+    height: auto; /* Allow posts to adjust their height based on content */
+    max-height: none; /* Reset max-height */
+    overflow: auto; /* Enable vertical scrolling if needed */
+}
+.database-post.input {
+
+    padding: 20px; /* You can adjust the padding as well */
+    margin-bottom: 30px;
+    height: 10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: none!important;
+  box-shadow: none!important;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.input-field input[type="text"]:focus,
+.input-field input[type="password"]:focus,
+.input-field input[type="email"]:focus,
+.input-field input[type="url"]:focus,
+.input-field input[type="time"]:focus,
+.input-field input[type="date"]:focus,
+.input-field input[type="datetime-local"]:focus,
+.input-field input[type="tel"]:focus,
+.input-field input[type="number"]:focus,
+.input-field input[type="search"]:focus,
+.input-field textarea.materialize-textarea:focus {
+    border-bottom: none !important; /* Remove the underline */
+    box-shadow: none !important; /* Remove the box-shadow */
+}
+
+.database-post.input {
+    min-height: 100px; /* Adjust the min-height as needed to make it shorter */
+    padding: 20px; /* You can adjust the padding as well */
+    margin-bottom: 30px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+
+@media (max-width: 1719px) {
+
+
+    
+
+    .post {
+    max-width: 800px;
+    font-family: 'Product Sans', 'Open Sans', sans-serif;
+    position: relative;
+
+    /* Other styles... */
+}
+* Adjust the position of the image-link container */
+.image-link-container {
+
+    position: absolute;
+    bottom: 60px; /* Adjust the value as needed */
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+/* Style the "Write Post" button */
+
+/* Rest of your existing styles... */
+/* Apply the new style only to database-retrieved posts */
+/* Apply the new style only to database-retrieved posts */
+/* Apply the new style only to database-retrieved posts */
+
+
+/* Additional styling for container layout */
+/* Additional styling for container layout */
+/* Additional styling for container layout */
+
+
+.row {
+    left: -100px/2;
+    width: 987;
+    display: flex;
+    flex-wrap: none;
+    justify-content: center;
+}
+
+.left-column, .right-column {
+    flex: 1;
+    left: -100px/2;
+    padding: 10px;
+}
+
+/* You can adjust these as needed */
+.left-posts, .right-posts {
+    flex: 1;
+    left: -10330px;
+    width: 350px; /* Increase the width to prevent overlap */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adjust the gap between posts */
+}
+
+
+.database-post {
+    min-width: 850px;
+    min-height: 250px;
+    padding: 20px; /* Increase the padding for better spacing */
+    margin-bottom: 30px; /* Increase the margin for better spacing */
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    /* Other styles... */
+}
+
+
+/* Apply the new style to input post */
+/* Apply the new style to input post */
+/* Apply the new style to input post */
+/* Apply the new style to input post */
+.database-post input {
+    width: 50%;
+    height: 10px;
+    border: none;
+    resize: none;
+    font-family: 'Product Sans', 'Open Sans', sans-serif;
+    padding: 10px;
+    margin: 0;
+    background-color: #fff;
+
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* Position the fixed button in the bottom right */
+.fixed-post-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+}.post {
+    outline: none;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #FFFFFF;
+    max-height: none; /* Reset max-height */
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Limit the height of posts with text */
+.post p {
+    margin: 0;
+    line-height: 1.6;
+   
+    overflow: hidden;
+}
+
+/* Show a "Read More" button for long posts */
+.read-more {
+    display: none;
+    color: #007bff; /* Change to your preferred link color */
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Style the "Read More" button on hover */
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Show the full content when the "Read More" button is clicked */
+.post.expand p {
+    max-height: none;
+    overflow: auto;
+}
+
+/* Rest of your CSS... */
+/* Style the modal textarea */
+/* Style the modal textarea */
+.modal-content textarea {
+    font-family: 'Product Sans', 'Open Sans', sans-serif; /* Use your preferred font */
+    resize: none; /* Disable manual resizing */
+    border: none;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    max-height: 200px; /* Set a maximum height */
+    overflow-y: auto; /* Add a vertical scrollbar when content overflows */
+}
+
+
+.database-post {
+    /* Your other styles... */
+    word-wrap: break-word; /* Break words if they are too long to fit on one line */
+    overflow-wrap: break-word; /* Overflow-wrap is an alias for word-wrap; use it for wider browser support */
+}
+/* Limit the height of posts with text */
+.post p {
+    margin: 0;
+    line-height: 1.6;
+    max-height: auto; /* Adjust this value to limit the height */
+    overflow: hidden;
+}
+.edit-profile-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 0px;
+    width: 75%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    height: 22%;
+  }
+  .profile-banner-container {
+    object-fit: cover;
+    width: 1020px;
+    height: 655px;
+}
+
+.profile-banner {
+    object-fit: cover;
+    width: 1020px;
+    height: 655px;
+}
+  @media screen and (min-width: 1000px) and (max-width: 1700px) {
+
+
+    .profile-banner-container {
+        object-fit: cover;
+        width: 1020px;
+        height: 655px;
+    }
+
+    .profile-banner {
+        object-fit: cover;
+        width: 1020px;
+        height: 655px;
+    }
+
+  }

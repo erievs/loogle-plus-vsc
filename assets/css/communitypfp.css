@@ -1,0 +1,960 @@
+body {
+    
+    margin: 0;
+    padding: 0;
+    background-color: #ECEFF1;
+    
+}
+
+
+/* Custom styles for sidenav */
+.sidenav-fixed {
+    border: none;
+    box-shadow: none;
+    position: fixed;
+    top: 117px;
+    left: 0;
+    height: 100%;
+    background-color: #ECEFF1;
+    color: white;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    width: 240px;
+}
+
+.sidenav .material-icons {
+    margin-right: 10px;
+    vertical-align: middle;
+    color: #757575;
+}
+
+.sidenav li a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+.sidenav li a span {
+    margin-left: 10px;
+}
+
+/* Styles for the header */
+.nav-wrapper {
+    
+    font-family: 'Product Sans', 'Open Sans', sans-serif;
+    height: -6rem;
+    
+    background-color:  #2E8B57; 
+    color: white;
+    text-align: left;
+    font-size: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Product Sans', 'Open Sans', sans-serif, 18px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-sizing: border-box;
+   
+
+}
+
+.header-content {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%; /* Make the header content take up 70% of the width */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.search-bar {
+    font-size: 18px;
+    height: 3rem;
+    background-color: #38813b;
+    display: flex;
+    color: #FFFFFF;
+    align-items: center;
+    padding: 5px 10px;
+    width: 50%;
+    margin-right: 23%;
+  }
+
+.search-bar input[type="text"] {
+
+    border: none;
+    color: #FFFFFF;
+    outline: none;
+    padding: 5px;
+    background-color: transparent;
+    width: 500px; /* Fill the available width */
+}
+
+.current-user {
+    margin-right: 20px;
+    text-align: left;
+    color: white;
+}
+
+/* Your existing styles */
+
+
+.tabs {
+    font-size: 18px;
+    font-family: 'Product Sans', 'Open Sans', sans-serif, 18px;
+    background-color: #4CAF50;;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin-top: 63px;
+    height: 100%;
+    border-bottom: 2px solid #FFFFFF; /* Blue highlighter color */
+}
+
+.tabs .tab a {
+    font-size: 12px;
+    font-family: 'Product Sans', 'Open Sans', sans-serif, 18px;
+    color: #FFFFFF; /* Set tab text color to black */
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.tabs .tab a.active {
+    color: #FFFFFF; /* Set active tab text color to black */
+    border-bottom: 2px solid #d4d4d4; /* Blue highlighter color */
+}
+.friend-suggestions {
+    margin-top: 20px;
+    padding-left: 240px; /* Add space for sidebar */
+}
+
+.friend-row {
+    display: flex;
+    justify-content: center; /* Center friends horizontally */
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.friend {
+    width: 225px; /* 25% to fit 4 per row, minus spacing */
+    height: 225px;
+    background-color: #FFFF;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin: 0 5px; /* Adjust the spacing between friends */
+}
+
+.friend-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.common-friends {
+    color: #757575;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .friend {
+        width: calc(50% - 20px); /* 2 columns with some spacing */
+        height: calc(50% - 20px); /* 2 columns with some spacing */
+    }
+}
+
+
+        /* Remove the blue outline when text is inputted */
+/* Remove the blue outline on focused input fields in Materialize */
+input[type="text"]:focus:not([readonly]),
+input[type="password"]:focus:not([readonly]),
+input[type="email"]:focus:not([readonly]),
+input[type="url"]:focus:not([readonly]),
+input[type="time"]:focus:not([readonly]),
+input[type="date"]:focus:not([readonly]),
+input[type="datetime-local"]:focus:not([readonly]),
+input[type="tel"]:focus:not([readonly]),
+input[type="number"]:focus:not([readonly]),
+input[type="search"]:focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+    border-color: #ffff;
+    box-shadow: none;
+}
+
+.post img {
+    max-width: 100%; /* Make the image fit within the container */
+    max-height: 100%; /* Allow image to grow to fit container height */
+    object-fit: contain; /* Maintain image aspect ratio */
+}
+
+
+
+        .body {
+            font-family: 'Product Sans', 'Open Sans', sans-serif; /* Use Product Sans if available, otherwise a font similar to Open Sans */
+        }
+
+        .post {
+            font-family: 'Product Sans', 'Open Sans', sans-serif; /* Use Product Sans if available, otherwise a font similar to Open Sans */
+            position: relative;
+            
+        }
+
+        .username {
+            font-family: 'Product Sans', 'Open Sans', sans-serif; /* Use Product Sans if available, otherwise a font similar to Open Sans */
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .no-background {
+            font-family: 'Product Sans', 'Open Sans', sans-serif; /* Use Product Sans if available, otherwise a font similar to Open Sans */
+            background-color: transparent !important;
+           
+        }
+
+        .input-box {
+            border-color: #ffff;
+    box-shadow: none;
+        }
+
+        /* Add these styles to your CSS or style tag */
+
+/* Style the modal */
+/* Add these styles to your CSS or style tag */
+
+/* Style the modal */
+
+element {
+	z-index: 1003;
+	display: block;
+	opacity: 1;
+	top: 159px;
+	transform: scaleX(1) scaleY(1);
+}
+.modal {
+    top: 28px;
+    max-width: 560px; /* Adjust the width as needed */
+    padding: 20px;
+    border-radius: 5px;
+    height: 523px; /* Adjust the height as needed */
+    margin-top: 159px; /* Add margin-top to move the modal down */
+}
+
+/* Style the modal content */
+.modal-content textarea {
+    outline: none;
+    resize: none;
+    border: none;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    height: 250px; /* Adjust the height as needed */
+}
+input:focus {
+  outline: none;
+}
+
+input:focus .a {outline:none;}
+
+
+/* Style the modal username */
+.modal-username {
+    font-family: 'Product Sans', 'Open Sans', sans-serif; /* Use Product Sans if available, otherwise a font similar to Open Sans */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Style the modal textarea */
+.modal-content textarea {
+    font-family: 'Product Sans', 'Open Sans', sans-serif; /* Use Product Sans if available, otherwise a font similar to Open Sans */
+    resize: none;
+    border: none;
+    margin: 0;
+    font: color black;
+    padding: 10px;
+    width: 100%;
+    height: 200px; /* Adjust the height as needed */
+}
+
+/* Style the modal buttons */
+/* Positioning the cancel and post buttons on the bottom right */
+.modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px; /* Adjust the value as needed */
+}
+
+/* Adjust the position of the modal buttons */
+.modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    bottom: 10px; /* Adjust the value as needed */
+    right: 20px; /* Adjust the value as needed */
+}
+
+.post {
+    max-width: 700px;
+    font-family: 'Product Sans', 'Open Sans', sans-serif;
+    position: relative;
+
+    /* Other styles... */
+}
+
+
+.post img {
+    padding: 0;
+    width: 100%; /* Make images take up 100% of the post width */
+    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+    object-fit: cover; /* Stretch the image to cover the entire container */
+}
+
+/* Adjust the position of the image-link container */
+.image-link-container {
+
+    position: absolute;
+    bottom: 60px; /* Adjust the value as needed */
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+/* Style the "Write Post" button */
+
+/* Rest of your existing styles... */
+/* Apply the new style only to database-retrieved posts */
+/* Apply the new style only to database-retrieved posts */
+/* Apply the new style only to database-retrieved posts */
+
+
+/* Additional styling for container layout */
+/* Additional styling for container layout */
+/* Additional styling for container layout */
+.container {
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    left: -100px;
+    width: 1450px;
+    display: flex;
+    flex-wrap: none;
+    justify-content: center;
+}
+
+.left-column, .right-column {
+    flex: 1;
+    left: -100px;
+    padding: 10px;
+}
+
+.left-column {
+    width: 100px;
+}
+
+/* You can adjust these as needed */
+.left-posts, .right-posts {
+    flex: 1;
+    left: -10330px;
+    width: 700px; /* Increase the width to prevent overlap */
+    display: flex;
+    flex-direction: column;
+    gap: 0px; /* Adjust the gap between posts */
+}
+
+.database-post img {
+    margin-bottom: 10px; /* Increase the margin for better spacing */
+    padding: 0; /* Remove padding for images */
+    
+}
+.database-post {
+    width: 700px;
+    min-height: 100px;
+    padding: 20px; /* Increase the padding for better spacing */
+    margin-bottom: 30px; /* Increase the margin for better spacing */
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    /* Other styles... */
+}
+
+
+
+.post-button {
+    position: fixed;
+    bottom: 20px; /* Adjust the distance from the bottom */
+    right: 20px; /* Adjust the distance from the right */
+    border-radius: 50%;
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
+    z-index: 999; /* Ensure the button appears above other content */
+}
+
+/* Apply the new style to input post */
+/* Apply the new style to input post */
+/* Apply the new style to input post */
+/* Apply the new style to input post */
+.container .database-post .input {
+
+    border: none;
+    resize: none;
+    font-family: 'Product Sans', 'Open Sans', sans-serif;
+    padding: 10px;
+    margin: 0;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+/* Add this to your existing CSS */
+#linkModal.modal {
+
+
+
+    border-radius: 0; /* Remove rounded corners */
+
+
+}
+/* Add this to your existing CSS */
+.modal {
+    border-radius: 0; /* Remove rounded corners */
+  
+}
+
+/* Position the fixed button in the bottom right */
+.modal-trigger post-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.database-post.input {
+   
+    max-height: 100px; /* Set a maximum width to prevent it from getting too small */
+    height: 100px; /* Adjust the height as needed */
+    border: none; /* Remove the border */
+    border-bottom: 1px solid transparent; /* Add a transparent border-bottom */
+}
+
+/* Adjust the input height as needed */
+.database-post.input input {
+    width: 100%;
+    height: 10px; /* Allow the input to adjust its height based on content */
+    border: none; /* Remove the border */
+    border-bottom: none; /* Remove the underline */
+    resize: none;
+    font-family: 'Product Sans', 'Open Sans', sans-serif;
+    padding: 10px;
+    margin: 0;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    outline: none; /* Remove the outline when focused */
+    
+}
+
+.database-post.input {
+
+    padding: 20px; /* You can adjust the padding as well */
+    margin-bottom: 30px;
+    height: 10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: none!important;
+  box-shadow: none!important;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.input-field input[type="text"]:focus,
+.input-field input[type="password"]:focus,
+.input-field input[type="email"]:focus,
+.input-field input[type="url"]:focus,
+.input-field input[type="time"]:focus,
+.input-field input[type="date"]:focus,
+.input-field input[type="datetime-local"]:focus,
+.input-field input[type="tel"]:focus,
+.input-field input[type="number"]:focus,
+.input-field input[type="search"]:focus,
+.input-field textarea.materialize-textarea:focus {
+    border-bottom: none !important; /* Remove the underline */
+    box-shadow: none !important; /* Remove the box-shadow */
+}
+
+.database-post.input {
+    min-height: 100px; /* Adjust the min-height as needed to make it shorter */
+    padding: 20px; /* You can adjust the padding as well */
+    margin-bottom: 30px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+
+@media (max-width: 1400px) {
+
+.sidenav {
+    display: none;
+}
+
+.left-column, .right-column {
+    flex: 1;
+    left: 100px/2;
+   
+}
+
+.left-column, .right-column {
+    flex: 1;
+    
+   
+}
+.row {
+    padding-right: 35%;
+}
+
+/* You can adjust these as needed */
+.left-posts, .right-posts {
+    flex: 1;
+    left: 10%;
+    width: 350px; /* Increase the width to prevent overlap */
+    display: flex;
+    flex-direction: column;
+  
+}
+
+
+.database-post {
+    border-radius: 0;
+    width: 30%;
+    min-height: 250px;
+    padding: 20px; /* Increase the padding for better spacing */
+    margin-bottom: 30px; /* Increase the margin for better spacing */
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    /* Other styles... */
+}
+
+
+/* Apply the new style to input post */
+/* Apply the new style to input post */
+/* Apply the new style to input post */
+/* Apply the new style to input post */
+.database-post input {
+    width: 50%;
+    height: 10px;
+    border: none;
+    resize: none;
+    font-family: 'Product Sans', 'Open Sans', sans-serif;
+    padding: 10px;
+    margin: 0;
+    background-color: #fff;
+
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* Position the fixed button in the bottom right */
+.fixed-post-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+}
+@media screen and (min-width: 1401px) and (max-width: 1600px) {
+
+* Adjust the position of the image-link container */
+.image-link-container {
+
+    position: absolute;
+    bottom: 60px; /* Adjust the value as needed */
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+/* Style the "Write Post" button */
+
+/* Rest of your existing styles... */
+/* Apply the new style only to database-retrieved posts */
+/* Apply the new style only to database-retrieved posts */
+/* Apply the new style only to database-retrieved posts */
+
+
+/* Additional styling for container layout */
+/* Additional styling for container layout */
+/* Additional styling for container layout */
+.container {
+   
+}
+
+.row {
+
+}
+
+.left-column, .right-column {
+    flex: 1;
+    left: -5000px/2;
+   
+}
+
+/* You can adjust these as needed */
+.left-posts, .right-posts {
+    flex: 1;
+    left: 10%;
+    width: 40px; /* Increase the width to prevent overlap */
+    display: flex;
+    flex-direction: column;
+  
+}
+
+
+.database-post {
+    border-radius: 0;
+    width: 30%;
+    min-height: 250px;
+    padding: 20px; /* Increase the padding for better spacing */
+    margin-bottom: 30px; /* Increase the margin for better spacing */
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    /* Other styles... */
+}
+
+
+/* Apply the new style to input post */
+/* Apply the new style to input post */
+/* Apply the new style to input post */
+/* Apply the new style to input post */
+.database-post input {
+    width: 50%;
+    height: 10px;
+    border: none;
+    resize: none;
+    font-family: 'Product Sans', 'Open Sans', sans-serif;
+    padding: 10px;
+    margin: 0;
+    background-color: #ffff;
+
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* Position the fixed button in the bottom right */
+.fixed-post-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+}.post {
+    outline: none;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #FFFFFF;
+    max-height: none; /* Reset max-height */
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Limit the height of posts with text */
+.post p {
+    margin: 0;
+    line-height: 1.6;
+    max-height: 200px; /* Adjust this value to limit the height */
+
+}
+
+/* Show a "Read More" button for long posts */
+.read-more {
+    display: none;
+    color: #007bff; /* Change to your preferred link color */
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Style the "Read More" button on hover */
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Show the full content when the "Read More" button is clicked */
+.post.expand p {
+    max-height: none;
+    overflow: auto;
+}
+
+/* Rest of your CSS... */
+/* Style the modal textarea */
+/* Style the modal textarea */
+.modal-content textarea {
+    font-family: 'Product Sans', 'Open Sans', sans-serif; /* Use your preferred font */
+    resize: none; /* Disable manual resizing */
+    border: none;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    max-height: 200px; /* Set a maximum height */
+    overflow-y: auto; /* Add a vertical scrollbar when content overflows */
+}
+
+.container {
+    
+  width: -373%;
+  left: 100px;
+  right: 117px;
+  padding-left: 104%;
+  padding-top: -2%;
+  padding-top: -3%;
+  margin-top: -170%;
+}
+
+    /* Apply styles when there is text input */
+    .custom-input-container input[type="text"] {
+        border: none !important;
+        border-bottom: none !important;
+        box-shadow: none !important;
+        outline: none !important;
+        background-color: transparent;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        color: #B0BEC5;
+    }
+    .custom-input-container {
+        width: 625px;
+        
+        height: 100px;
+        padding: 10px;
+        background-color: #fff;
+        box-shadow: none; /* Remove the box shadow */
+    }
+
+    .database-post {
+        width: 625px;
+    }
+
+    .row {
+        width: 1344px;
+    }
+
+
+  
+
+    .row .col {
+        float: left;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: -3px .75rem;
+        min-height: 1px;
+      }
+      .database-post {
+        width: 625px;
+      }
+      .row .col {
+        float: left;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding-right: 2%;
+        min-height: 1px;
+      }
+
+      .row {
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 1292px;
+      }
+
+      @media screen and (min-width: 1500px) and (max-width: 1600px) {
+
+        .container {
+        
+            padding-left: 109%;
+  
+        
+        }
+
+      .row {
+        position: relative;
+          left: -60px;
+          transform: scale(0.90); /* Scale down to 70% of the original size */
+          bottom: 75px;
+          }
+
+          .database-post {
+            width: 625px;
+            min-height: 10%;
+          }
+      }
+
+      @media screen and (min-width: 1300px) and (max-width: 1499px) {
+        .row {
+              position: relative;
+              left: -60px;
+              transform: scale(0.90); /* Scale down to 70% of the original size */
+              bottom: 125px;
+              }
+    
+              .database-post {
+                width: 524px;
+                min-height: 1%;
+              }
+              .nav-wrapper {
+                font-family: 'Product Sans', 'Open Sans', sans-serif;
+                color: white;
+                text-align: left;
+                font-size: 20px;
+                font-family: 'Product Sans', 'Open Sans', sans-serif, 18px;
+              }
+      }
+
+      @media screen and (min-width: 1200px) and (max-width: 1299px) {
+        .row {
+              position: relative;
+              left: -105px;
+              transform: scale(0.85); /* Scale down to 70% of the original size */
+              bottom: 85px;
+              }
+    
+              .database-post {
+                width: 505px;
+                min-height: 1%;
+              }
+              .nav-wrapper {
+                font-family: 'Product Sans', 'Open Sans', sans-serif;
+                color: white;
+                text-align: left;
+                font-size: 16px;
+                font-family: 'Product Sans', 'Open Sans', sans-serif, 18px;
+              }
+      }
+
+      @media screen and (min-width: 100px) and (max-width: 1199px) {
+        .row {
+              position: relative;
+              left: -105px;
+              transform: scale(0.85); /* Scale down to 70% of the original size */
+              bottom: 105px;
+              }
+    
+              .database-post {
+                width: 420px;
+                min-height: 1%;
+              }
+              .nav-wrapper {
+                font-family: 'Product Sans', 'Open Sans', sans-serif;
+                color: white;
+                text-align: left;
+                font-size: 12px;
+                height: -30%;
+                font-family: 'Product Sans', 'Open Sans', sans-serif, 18px;
+              }
+      }
+
+      @media screen and (min-width: 1850px) and (max-width: 2000px) {
+        .row {
+            left: 18px;
+              bottom: -60px;
+              position: relative;
+              }
+
+              .custom-input-container {
+              
+              }
+
+              .post {
+                transform: scale(1.05);
+              }
+              .row .col.s12 {
+                width: 68%;
+                margin-left: auto;
+                left: auto;
+                right: auto;
+              }
+    
+      }
+
+      @media screen and (min-width: 2000px) and (max-width: 2400px) {
+        .row {
+            left: 18px;
+              bottom: -50%;
+              position: relative;
+              }
+
+              .custom-input-container {
+              
+              }
+
+              .post {
+                transform: scale(1.05);
+              }
+              .row .col.s12 {
+                width: 68%;
+                margin-left: auto;
+                left: auto;
+                right: auto;
+              }
+    
+      }
+
+      @media screen and (min-width: 2200px) and (max-width: 2800px) {
+        .row {
+            left: 240px;
+              bottom: -220%;
+              position: relative;
+              transform: scale(1.35);
+              }
+
+              .custom-input-container {
+              
+              }
+
+              .post {
+             
+              }
+              .row .col.s12 {
+                width: 68%;
+                margin-left: auto;
+                left: auto;
+                right: auto;
+              }
+    
+      }
+
+      .scrollbar {
+        display: inline;
+      }
+      
+
+      .row {
+       
+        display: flex;
+        flex-wrap: nowrap; /* Prevent wrapping of posts */
+        overflow-y: auto; /* Enable horizontal scrolling if needed */
+        scroll-behavior: smooth; /* Smooth scrolling for horizontal scrolling */
+        padding-bottom: 20px; /* Add space at the bottom for scrollbar */
+    }
+
+    .row {
+        overflow-y: auto;
+    }
+
+    .container {
+   
+
+    }

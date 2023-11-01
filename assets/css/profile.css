@@ -1,0 +1,230 @@
+/* profile.css */
+
+/* Styles for the profile banner */
+.profile-banner-container {
+
+    position: relative;
+    max-width: 100%;
+    margin-bottom: 20px;
+    height: 608px;
+    width: 1080px;
+}
+
+
+.profile-banner {
+    height: 608px;
+    width: 1080px;
+}
+
+
+/* Edit profile button */
+.edit-profile-button {
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    float: right;
+
+    z-index: 2;
+}
+
+.edit-profile-button:hover {
+    background-color: #357ac8;
+    right: -303px;
+    z-index: 2;
+}
+
+/* Edit profile modal */
+.edit-profile-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.edit-profile-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Save button */
+.save-button {
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    float: right;
+}
+
+.save-button:hover {
+    background-color: #357ac8;
+}
+
+/* CSS Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ECEFF1;
+    overflow-x: hidden;
+}
+
+
+header.nav-wrapper {
+    background-color: #FFFFFF;
+    color: #757575;
+    text-align: left;
+    font-size: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Product Sans', 'Open Sans', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+
+
+.nav-left {
+    display: flex;
+    align-items: left;
+}
+
+.header-text {
+    margin: 0 10px; /* Add spacing around the header text */
+}
+
+
+
+.current-user {
+    margin-right: 20px;
+     text-align: left;
+}
+
+
+
+
+.post {
+    width: 500px;
+    outline: none;
+    margin: 20px ;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.textarea-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.textarea-container i.material-icons.prefix {
+    position: absolute;
+    top: 18px;
+    left: 10px;
+    color: #888;
+}
+
+.post-button {
+    background-color: #d34836;
+    color: white;
+    border: none;
+    border-radius: 50%; /* Make the button rounded */
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+.post-button:hover {
+    background-color: #b83224;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Custom styles for sidenav */
+.sidenav-fixed {
+    border: none;
+    box-shadow: none;
+    position: fixed;
+    top: 117px;
+    left: 0;
+    height: 100%;
+    background-color: #ECEFF1;
+    color: black;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    width: 240px;
+}
+
+.sidenav .material-icons {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.sidenav li a {
+    display: flex;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+}
+
+.sidenav li a span {
+    margin-left: 10px;
+}
+
+header.nav-wrapper {
+    background-color: #d34836;
+    color: white;
+}

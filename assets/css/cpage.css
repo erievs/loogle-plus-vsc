@@ -1,0 +1,99 @@
+.timestamp-right {
+    float: right; /* Align to the right */
+    text-align: right; /* Align text to the right within the element */
+    font-family: 'Product Sans', sans-serif;
+    color: #B0B0B0;
+}
+.post {
+    padding-left: -5px; /* Remove left padding */
+    padding-right: -5px; /* Remove right padding */
+}
+
+.img {
+    padding-left: -50px; /* Remove left padding */
+    padding-right: -50px; /* Remove right padding */
+}
+
+.post {
+  outline: none;
+  margin: 20px 0;
+  padding-right: 0px;
+  padding-left: 0px;
+  background-color: #FFFFFF;
+  max-height: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+/* Add this style to stretch images to the width of the post container */
+/* Style for the images within the post container */
+
+
+/* Ensure the parent container stretches to accommodate the image */
+
+
+.c-name .h{
+    width: 100px;
+    height: auto;
+    padding-left: 1%;
+    padding-right: 10px;
+    font-size: 34px;
+    display: block; /* Use "block" instead of "inline-block" */
+    white-space: normal; /* Use "normal" to wrap at word boundaries */
+}
+
+.dropdown-trigger {
+    
+  
+    top: 100px; /* Adjust the top position as needed */
+    right: 10px; /* Adjust the right position as needed */
+    font-size: 24px; /* Adjust the icon size as needed */
+    color: #000; /* Adjust the icon color as needed */
+    cursor: pointer;
+}
+.imgcon {
+    position: relative; /* Make the container a positioning context */
+    display: inline-block; /* Make the container inline-block for proper alignment */
+}
+
+.imgcon img {
+    width: 100%;
+    height: 300px;
+    display: block; /* Ensure the image takes up the entire container */
+}
+
+/* Style the "more_vert" icon */
+.imgcon .dropdown-trigger {
+    position: absolute;
+    top: 10px; /* Adjust the top position as needed */
+    right: 10px; /* Adjust the right position as needed */
+    font-size: 24px; /* Adjust the icon size as needed */
+    color: #000; /* Adjust the icon color as needed */
+    cursor: pointer;
+}
+.imgcon {
+    position: relative;
+    display: inline-block;
+}
+
+.imgcon img {
+    width: 100%;
+    height: 300px;
+    display: block;
+}
+
+/* Style the "more_vert" icon */
+.imgcon .dropdown-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.imgcon .dropdown-container .dropdown-trigger {
+    font-size: 24px;
+    color: #000;
+    cursor: pointer;
+}
+
+.editCommunityModal {
+    left : 10%;
+}
+

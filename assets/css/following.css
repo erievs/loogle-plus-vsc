@@ -1,0 +1,304 @@
+body {
+    
+    margin: 0;
+    padding: 0;
+    background-color: #ECEFF1;
+    overflow-x: hidden;
+}
+
+/* Custom styles for sidenav */
+.sidenav-fixed {
+    border: none;
+    box-shadow: none;
+    position: fixed;
+    top: 117px;
+    left: 0;
+    height: 100%;
+    background-color: #ECEFF1;
+    color: #000000;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    width: 240px;
+}
+
+.sidenav .material-icons {
+    margin-right: 10px;
+    vertical-align: middle;
+    color: #757575;
+}
+
+.sidenav li a {
+    display: flex;
+    align-items: center;
+    color: #000000;
+    text-decoration: none;
+}
+
+.sidenav li a span {
+    margin-left: 10px;
+}
+
+/* Styles for the header */
+.nav-wrapper {
+    
+    font-family: 'Product Sans', 'Open Sans', sans-serif;
+    height: -6rem;
+    
+    background-color: #FFFFFF;
+    color: #757575;
+    text-align: left;
+    font-size: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Product Sans', 'Open Sans', sans-serif, 18px;
+    font-size: 18px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-sizing: border-box;
+   
+
+}
+
+.header-content {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%; /* Make the header content take up 70% of the width */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.search-bar {
+     font-size: 18px;
+    height: 3rem;
+    background-color: #ECEFF1;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    flex: 1; /* Take up remaining space */
+}
+
+.search-bar input[type="text"] {
+
+    border: none;
+    color: #000000;
+    outline: none;
+    padding: 5px;
+    background-color: transparent;
+    width: 100%; /* Fill the available width */
+}
+
+.current-user {
+    margin-right: 20px;
+    text-align: left;
+    color: #000000;
+}
+
+/* Your existing styles */
+
+
+.tabs {
+    font-size: 18px;
+    font-family: 'Product Sans', 'Open Sans', sans-serif, 18px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 63px;
+    height: 100%;
+    border-bottom: 2px solid #FFFFFF; /* Blue highlighter color */
+}
+
+.tabs .tab a {
+    font-size: 12px;
+    font-family: 'Product Sans', 'Open Sans', sans-serif, 18px;
+    color: #000000; /* Set tab text color to black */
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.tabs .tab a.active {
+    color: #000000; /* Set active tab text color to black */
+    border-bottom: 2px solid #4285F4; /* Blue highlighter color */
+}
+.friend-suggestions {
+    margin-top: 20px;
+    padding-left: 240px; /* Add space for sidebar */
+}
+
+.friend-row {
+    display: flex;
+    justify-content: center; /* Center friends horizontally */
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.friend {
+    width: 225px; /* 25% to fit 4 per row, minus spacing */
+    height: 225px;
+    background-color: #FFFF;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin: 0 5px; /* Adjust the spacing between friends */
+}
+
+.friend-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.common-friends {
+    color: #757575;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .friend {
+        width: calc(50% - 20px); /* 2 columns with some spacing */
+        height: calc(50% - 20px); /* 2 columns with some spacing */
+    }
+}
+
+/* Add this CSS to your stylesheet */
+
+/* Card styling */
+/* Add this CSS to your stylesheet */
+
+/* Card styling */
+.card {
+    height: 117px;
+    width: 1430px;
+    left: -1000px;
+    display: flex;
+
+   
+    box-shadow: none;
+  }
+
+/* Card title styling */
+.card-title {
+    font-weight: bold;
+}
+
+/* Card content styling */
+.card-content {
+    padding: 15px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+    /* Adjust card width for smaller screens */
+    .card {
+        width: 100%;
+    }
+}
+
+
+body, div, p, h1, h2, h3, ul, li {
+    margin: 0;
+    padding: 0;
+}
+.row {
+    display: flex;
+    justify-content: left;
+}
+
+.text-container {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -60px;
+    margin-left: 14px;
+  }
+
+  .card {
+
+    display: flex;
+    box-shadow: none;
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+    border-bottom: 1px solid #ccc; /* Add a border only at the bottom */
+}
+
+/* Card title styling */
+.card-title {
+    font-weight: bold;
+}
+
+/* Card content styling */
+.card-content {
+    padding: 10px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+    /* Adjust card width for smaller screens */
+    .card {
+        width: 100%;
+    }
+}
+.row {
+    display: flex;
+    justify-content: left;
+    margin: 0;
+    padding: 0;
+    padding-left: 0px;
+    padding-left: 7%;
+  }
+
+  @media screen and (min-width: 1600px) and (max-width: 1800px) {
+  .card {
+    height: 117px;
+    width: 1430px;
+    left: -889px;
+    display: flex;
+    box-shadow: none;
+  }  
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1600px) {
+    .card {
+      height: 117px;
+      width: 1430px;
+      left: -790px;
+      display: flex;
+      box-shadow: none;
+    }  
+  }
+
+  @media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .card {
+      height: 117px;
+      width: 1430px;
+      left: -696px;
+      display: flex;
+      box-shadow: none;
+    }  
+  }
+
+  @media screen and (min-width: 1000px) and (max-width: 1200px) {
+    .card {
+      height: 117px;
+      width: 1430px;
+      left: -626px;
+      display: flex;
+      box-shadow: none;
+    }  
+  }

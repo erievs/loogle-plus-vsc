@@ -1,0 +1,343 @@
+.post {
+    font-family: 'Product Sans', 'Open Sans', sans-serif;
+    position: relative;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 0px solid;
+    border-radius: 0px;
+    background-color: #fff;
+    height: auto;
+    min-height: 250px;
+  }
+  .database-post {
+    width: 700px;
+    min-height: 100px;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  .post img {
+    padding: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .post img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  .database-post img {
+    margin-bottom: 10px;
+    padding: 0;
+  }
+  .post img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  .post {
+    outline: none;
+    margin: 20px 0;
+    padding-right: 0px;
+    padding-left: 0px;
+    background-color: #FFFFFF;
+    max-height: none;
+    overflow-y: auto;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  }
+  .post {
+    outline: none;
+    margin: 20px 0;
+    padding-right: 0px;
+    padding-left: 0px;
+    background-color: #FFFFFF;
+    max-height: none;
+    overflow-y: auto;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  }
+  .post {
+    outline: none;
+    margin: 20px 0;
+    padding-right: 0px;
+    padding-left: 0px;
+    background-color: #FFFFFF;
+    max-height: none;
+    overflow-y: auto;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  }
+  .post {
+    max-width: 700px;
+    font-family: 'Product Sans', 'Open Sans', sans-serif;
+    position: relative;
+  }
+  .post p {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .post p {
+    margin: 0;
+    line-height: 1.6;
+    overflow: hidden;
+  }
+  .post {
+    font-family: 'Product Sans', 'Open Sans', sans-serif;
+  }
+  .timestamp-right {
+    float: right;
+    text-align: right;
+    font-family: 'Product Sans', sans-serif;
+    color: #B0B0B0;
+  }
+  .post p {
+    line-height: 1.6;
+  }
+  .profile-banner {
+    height: 608px;
+    width: 1080px;
+    position: absolute;
+    right: -143px;
+    
+  }
+  #edit-profile-button {
+    position: absolute;
+    bottom: 100px;
+    right: -114px;
+    z-index: 2;
+    text-align: center;
+  }
+  #edit-profile-button {
+    position: absolute;
+    bottom: 100px;
+    right: -114px;
+    z-index: 2;
+    text-align: center;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    color: black;
+    width: 160px;
+    height: 76px;
+    text-align: center;
+  }
+  #edit-profile-button p {
+position: relative;
+top: 10px;
+  }
+
+  .edit-profile-button p {
+position: relative;
+bottom: 10px;
+  }
+
+  .edit-profile-button p {
+    position: relative;
+    top: 48px;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  #edit-profile-button {
+    position: absolute;
+    bottom: 100px;
+    right: -114px;
+    z-index: 2;
+    text-align: center;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    color: black;
+    width: 160px;
+    height: 76px;
+    text-align: center;
+    font-family: "Product Sans", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  #edit-profile-button {
+    position: absolute;
+    bottom: 100px;
+    right: -114px;
+    z-index: 2;
+    text-align: center;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    color: black;
+    width: 165px;
+    height: 73px;
+    text-align: center;
+    font-family: "Product Sans", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  header.nav-wrapper {
+    font-family: 'Product Sans', 'Open Sans', sans-serif;
+    color: black;
+    font-family: "Product Sans", sans-serif;
+  }
+  
+  @media screen and (min-width: 1600px) and (max-width: 2000px) { 
+
+    .profile-banner {
+      object-fit: cover;
+      width: 1310px;
+      height: 655px;
+    }
+  
+    .profile-banner-container {
+      object-fit: cover;
+      width: 1310px;
+      height: 655px;
+    }
+  
+  
+    }
+
+    #edit-profile-button {
+      position: absolute;
+      bottom: 285px;
+      right: -114px;
+      z-index: 2;
+      text-align: center;
+      box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+      background: #fff;
+      color: black;
+      width: 165px;
+      height: 73px;
+      text-align: center;
+      font-family: "Product Sans", sans-serif;
+      font-weight: bold;
+      font-size: 14px;
+      border-radius: 2px;
+    }
+
+    .post {
+      max-width: 530px;
+      font-family: 'Product Sans', 'Open Sans', sans-serif;
+      position: relative;
+      min-width: 140px;
+    }
+
+    .row {
+      position: relative;
+      
+    }
+
+    .row {
+    
+      width: 1100px;
+      display: flex;
+      flex-wrap: none;
+      justify-content: center;
+    }
+
+#edit-profile-button p {
+  position: relative;
+  top: 2px;
+}
+
+.database-post {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+#edit-profile-button {
+  position: absolute;
+  bottom: 50%;
+  right: -8%;
+  z-index: 2;
+  text-align: center;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  color: black;
+  width: 141px;
+  height: 51px;
+  text-align: center;
+  font-family: "Product Sans", sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  border-radius: 2px;
+}
+
+@media screen and (min-width: 1600px) and (max-width: 2000px) {}
+.profile-banner-container {
+  object-fit: cover;
+  width: 1310px;
+  height: 655px;
+  width: 1273px;
+}
+.container {
+  max-width: 1100px;
+}
+.row {
+  width: 1090px;
+  display: flex;
+  flex-wrap: none;
+  justify-content: center;
+}
+
+.row {
+  left: -13%;
+  width: 1450px;
+  display: flex;
+  flex-wrap: none;
+  justify-content: center;
+}
+
+.row {
+  left: -13%;
+  width: 1091px;
+  display: flex;
+  flex-wrap: none;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1600px) {
+
+  .row {
+    transform: scale(0.85,1);
+    left: -18%;
+    top: -1%;
+    position: relative;
+  }
+  .profile-banner {
+    transform: scale(0.85,1);
+  }
+}
+
+.posts-title {
+  margin-right: 88px;
+right: 10%;
+position: relative;
+}
+
+.banner-info {
+  color: #fff;
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 1100px;
+  bottom: 20px;
+  position: relative;
+}
+
+.profile-info {
+width: 15%;
+position: relative;
+bottom: -40%;
+left: 23%;
+font-size: 30px;
+color: #fff;
+font-weight: 500;
+color: #fff;
+}
+
+.typeuser {
+
+  position: relative;
+  top: -27%;
+  margin-top: -26px;
+}

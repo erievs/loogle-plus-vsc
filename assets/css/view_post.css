@@ -1,0 +1,329 @@
+
+body {
+ 
+}
+/* Add your custom styles for the view_post.php page here */
+.post-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.post {
+   
+}
+.post {
+    width: 700px;
+min-height: 100px;
+padding: 20px;
+margin-bottom: 30px;
+background-color: #fff;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.post p {
+margin: 0;
+line-height: 1.6;
+text-align: left;
+}
+
+.post-content {
+    text-align: left; /* Align content to the left */
+}
+
+.username {
+    text: bold;
+    text-align: left;
+    display: flex;
+    align-items: center; /* Align username and pfp vertically */
+}
+
+.pfp {
+    width: 40px; /* Set the size of the placeholder pfp */
+    height: 40px;
+    background-color: #ccc; /* Placeholder pfp background color */
+    border-radius: 50%; /* Create a circular shape for pfp */
+    margin-right: 10px; /* Add spacing between pfp and username */
+}
+
+.post-image {
+    max-width: 100%; /* Ensure the image fits within the container */
+}
+.comment-icon {
+    font-size: 13px;
+    color: black;
+background-color: #ECEFF1; /* Change the background color to your preference */
+border-radius: 50%; /* Make it round */
+width: 30px; /* Adjust the width and height to your liking */
+height: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer; /* Add a pointer cursor to indicate interactivity */
+font-size: 16px;
+float: right;
+}
+
+.comment-icon .material-icons{
+
+font-size: 16px;
+}
+/* Comment form container */
+.comment-form {
+margin-top: 20px; /* Add margin for spacing */
+}
+
+/* Comment textarea */
+.comment-form textarea {
+width: 80%;
+padding: 10px; /* Adjust the padding for better appearance */
+border: none; /* Remove the border */
+border-radius: 0; /* Remove any border radius */
+resize: none; /* Prevent resizing of the textarea */
+}
+
+/* Post button */
+.comment-form .post-button {
+background-color: #007bff; /* Change the background color to your preference */
+color: #fff; /* Change the text color to your preference */
+border: none;
+padding: 10px 15px; /* Adjust padding as needed */
+border-radius: 0; /* Remove any border radius */
+cursor: pointer;
+}
+
+/* Clearfix to ensure proper layout */
+.comment-form::after {
+content: "";
+display: table;
+clear: both;
+}
+
+.waves-effect {
+position: relative;
+cursor: pointer;
+display: inline-block;
+overflow: hidden;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+-webkit-tap-highlight-color: transparent;
+vertical-align: top;
+z-index: 1;
+-webkit-transition: .3s ease-out;
+transition: .3s ease-out;
+}
+.comment-form {
+text-align: right;
+}
+.pfp {
+background-color: #FFFF; /* Change the background color to your preference */
+border-radius: 50%; /* Make it round */
+}
+.comments {
+max-height: auto; /* Set the max height for the comments section */
+
+}
+
+/* Adjust comment layout */
+.comment-container {
+display: flex;
+align-items: flex-start; /* Align items at the top */
+margin-bottom: 10px; /* Add margin between comments */
+}
+
+.comment-user {
+display: flex;
+flex-direction: column; /* Display pfp and username as a column */
+align-items: center;
+}
+
+.post-image {
+max-width: 100%;
+width: 670px;
+}
+
+.post-time {
+font-family: 'Product Sans', sans-serif;
+color: #B0B0B0;
+}
+
+.comment-content {
+width: auto;
+}
+
+.comment-form {
+text-align: left;
+}
+.comment-created {
+font-family: 'Product Sans', sans-serif;
+color: #B0B0B0;
+margin-left: 5px;
+}
+
+/* Add your custom styles for the view_post.php page here */
+.post-container {
+display: flex;
+flex-direction: column; /* Set flex direction to column */
+justify-content: center;
+align-items: center;
+min-height: 100vh; /* Minimum height to fill the viewport */
+}
+
+.post {
+width: 700px;
+padding: 20px;
+margin-bottom: 30px;
+background-color: #fff;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+flex: 1; /* Allow the post container to grow and fill available space */
+}
+.comment-container {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+margin-bottom: 10px;
+word-wrap: break-word; /* Ensure text wraps if it overflows */
+}
+
+.comment-header {
+display: flex;
+align-items: center;
+width: 100%;
+}
+
+.comment-user {
+display: flex;
+align-items: center;
+}
+
+.comment-content {
+width: auto;
+}
+.comment-container {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+margin-bottom: 10px;
+word-wrap: break-word; /* Ensure text wraps if it overflows */
+}
+
+.comment-header {
+
+align-items: flex-start; /* Align items at the top */
+width: 100%;
+}
+
+.comment-user {
+display: flex;
+align-items: flex-start; /* Align items at the top */
+flex-direction: column; /* Display pfp and username as a column */
+}
+
+.comment-header {
+display: flex;
+
+align-items: flex-start; /* Align items at the top */
+width: 100%;
+}
+.comment-header p{
+margin-left: 5px;
+}
+.comment-user {
+display: flex;
+align-items: flex-start; /* Align items at the top */
+flex-direction: column; /* Display pfp and username as a column */
+}
+
+.comment-content {
+width: auto;
+}
+.comment-container {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+margin-bottom: 10px;
+word-wrap: break-word; /* Ensure text wraps if it overflows */
+min-height: auto; /* Allow the container to adjust its height based on content */
+}
+
+.comment-content {
+width: auto;
+margin-left: 58px;
+word-wrap: normal;
+
+}
+.comment-content {
+width: auto;
+margin-left: 55px;
+word-wrap: normal;
+margin-bottom: 2px;
+}
+.comment-content {
+width: auto;
+word-wrap: break-word; /* Ensure text wraps if it overflows */
+}
+.comment-content {
+width: auto;
+word-wrap: break-word !important; /* Ensure text wraps if it overflows */
+}
+.comment-content {
+width: auto;
+margin-left: 55px;
+word-wrap: normal;
+margin-bottom: 2px;
+overflow: x;
+word-wrap: break-word;
+width: 600px;
+}
+
+.comment-content {
+width: auto;
+margin-left: 55px;
+word-wrap: normal;
+margin-bottom: 2px;
+overflow: x;
+word-wrap: break-word;
+width: 600px;
+bottom: 15px;
+position: relative;
+}
+.post-container {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+min-height: 54vh;
+}
+.post-container {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+min-height: 67vh;
+height: auto;
+}
+.post-container {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+flex-grow: 1; /* Allow the container to grow to fill available space */
+
+}
+
+.comment-form .post-button {
+background-color: #007bff; /* Change the background color to your preference */
+color: #fff; /* Change the text color to your preference */
+border: none;
+padding: 10px 15px; /* Adjust padding as needed */
+border-radius: 0; /* Remove any border radius */
+cursor: pointer;
+width: 100%; /* Make the button width 100% of its container */
+}
+.comments {
+max-height: auto;
+}

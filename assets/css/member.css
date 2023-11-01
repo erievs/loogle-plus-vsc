@@ -1,0 +1,160 @@
+
+.sidebar {
+    top: -10%
+}
+
+.community {
+ justify-content: flex-start; /* Align content to the left */
+ margin-right: auto; /* Push it to the leftmost position */
+}
+
+.transparent {
+    background-color: transparent !important;
+    color: inherit !important; /* Inherit the text color from parent */
+    border: none !important; /* Remove border */
+    box-shadow: none !important; /* Remove box shadow */
+    text-decoration: none !important; /* Remove underline */
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.community-button {
+    height: 100px;
+    width: 100px;
+}
+
+
+
+.modal .modal-footer {
+    padding-top: 15%;
+}
+.createCommunityForm {
+    
+}
+.input-holder { 
+    
+}
+
+.mat-icon {
+padding-top: 20%;
+font-family: \'Product Sans\', sans-serif;
+cursor: pointer;
+}
+.mat-icon p{
+    color: #9e9e9e; 
+}
+
+
+.mat-icon {
+top: -10%;
+
+}
+
+
+
+/* Assuming your container has a class or ID like .card-image */
+.card-image {
+    width: 100%; /* Limit the container width to 40% */
+    height: fill;
+    overflow: hidden; /* Hide any overflowing content */
+}
+
+/* Make the image within the container stretch to 100% of the container's width */
+.card-image img.responsive-img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+.card-title {
+    font-size: 16px;
+}
+.card-content {
+    align-content: left;
+    text-align: left;
+    font-size: 16px;
+
+}
+.card-title {
+    align-content: left;
+    text-align: left;
+  
+}
+
+.card-content .p {
+position: fixed;
+text-align: left;
+}
+.group-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+}
+.modal {
+    height: 40%;
+}
+.text-con1 {
+    padding-right: 1%;
+    color: #9e9e9e;
+}
+.nav-wrapper, .tabs {
+  background-color: #009d56;
+}
+
+.search-bar {
+  background-color: #2fac6f;
+  border-radius: 2px;
+}
+
+input:not([type]):focus:not([readonly]), input[type="text"]:not(.browser-default):focus:not([readonly]), input[type="password"]:not(.browser-default):focus:not([readonly]), input[type="email"]:not(.browser-default):focus:not([readonly]), input[type="url"]:not(.browser-default):focus:not([readonly]), input[type="time"]:not(.browser-default):focus:not([readonly]), input[type="date"]:not(.browser-default):focus:not([readonly]), input[type="datetime"]:not(.browser-default):focus:not([readonly]), input[type="datetime-local"]:not(.browser-default):focus:not([readonly]), input[type="tel"]:not(.browser-default):focus:not([readonly]), input[type="number"]:not(.browser-default):focus:not([readonly]), input[type="search"]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 0!important;
+  -webkit-box-shadow: none!important;
+  box-shadow: none!important;
+}
+
+.search-bar input[placeholder="Search"] {
+    padding-top:11px;
+}
+
+.tabs .tab a .active {
+    content: "RECOMMENDED"
+}
+
+.card-action{
+  right: 77px;
+  top: 12px;;
+  color: #2fac6f;
+}
+
+.transparent {
+  font-weight: 600;
+}
+
+.sidenav li a[href="youmaylike.php"]{
+    color: #2fac6f
+}
+
+.sidenav li > a > i.material-symbols-outlined{
+    color: #2fac6f
+}
+
+.tabs .tab a:hover {
+  color: #ffffffbd;
+}
+
+i.material-icons[style="vertical-align: middle; margin-bottom: 2px; color: black;"]{
+    color: white !important;
+}
+
+.tabs .tab a {
+  color: #ffffffbd;
+}
+
+.tabs .tab a .active, .tabs .tab a.active:hover {
+  color: #fff!important;
+}
+
+.tabs .tab a:focus, .tabs .tab a:focus.active {
+  background-color: rgba(0, 0, 0, 0);
+}

@@ -1,0 +1,239 @@
+/* CSS Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ECEFF1;
+    overflow-x: hidden;
+}
+
+
+
+
+
+header.nav-wrapper {
+    background-color: #d34836;
+    color: white;
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 103px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Product Sans', 'Open Sans', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+
+
+.nav-left {
+    display: flex;
+    align-items: left;
+}
+
+.header-text {
+    margin: 0 10px; /* Add spacing around the header text */
+}
+
+
+.current-user {
+    margin-right: 20px;
+     text-align: left;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #ECEFF1;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.post {
+    
+    outline: none;
+    margin: 20px 0;
+    background-color: #FFFFFF;
+    min-height: auto;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.textarea-container {
+    outline: none;
+    border-color: #ffff;
+    box-shadow: none;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.textarea-container input.materialize-textarea:focus {
+    outline: none;
+    border-color: #ffff;
+    box-shadow: none;
+}
+
+.textarea-container input.materialize-textarea:focus {
+    outline: none;
+    border-color: #ffffff;
+    box-shadow: none;
+}
+
+.textarea-container i.material-icons.prefix {
+    border-color: #ffff;
+    box-shadow: none;
+    position: absolute;
+    top: 18px;
+    left: 10px;
+    color: #888;
+}
+
+.post-button {
+    background-color: #d34836;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+.post-button:hover {
+    background-color: #b83224;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Custom styles for sidenav */
+.sidenav-fixed {
+    border: none;
+    box-shadow: none;
+    position: fixed;
+    top: 117px;
+    left: 0;
+    height: 100%;
+    background-color: #ECEFF1;
+    color: black;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    width: 240px;
+}
+
+.sidenav .material-icons {
+    font-size: 32px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.sidenav li a {
+    font-family: 'Product Sans', 'Open Sans', sans-serif; /* Use Product Sans if available, otherwise a font similar to Open Sans */
+    font-size: 16.5px;
+    display: flex;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+}
+
+.sidenav li a span {
+    margin-left: 10px;
+}
+
+.post-input:focus {
+    outline: none;
+}
+
+.left-column {
+    width: 100%;
+    padding-right: 10px; /* Adjust spacing between columns */
+}
+
+.right-column {
+    width: 100%;
+    padding-left: 10px; /* Adjust spacing between columns */
+}
+
+/* Media query for larger screens to display two columns */
+@media (min-width: 768px) {
+    .left-column {
+        width: 50%;
+        padding-right: 20px;
+    }
+
+    .right-column {
+        width: 50%;
+        padding-left: 20px;
+    }
+}
+
+
+
+.post-options {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.post-options-icon {
+    cursor: pointer;
+}
+
+.post-options-menu {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.post-options-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.post-options:hover .post-options-menu {
+    display: block;
+}
+/* Rest of your CSS */
+
+.input-field input[type="text"],
+.input-field input[type="password"],
+.input-field input[type="email"],
+.input-field input[type="url"],
+.input-field input[type="time"],
+.input-field input[type="date"],
+.input-field input[type="datetime-local"],
+.input-field input[type="tel"],
+.input-field input[type="number"],
+.input-field input[type="search"] {
+    border: none; /* Remove the border */
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: transparent;
+    -webkit-box-shadow: none; /* Remove the box shadow */
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+

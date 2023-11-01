@@ -1,0 +1,134 @@
+@media screen and (min-width: 1400px) and (max-width: 1600px) {
+    .row {
+        left: -100px;
+        width: 1450px;
+        display: flex;
+        flex-wrap: none;
+        justify-content: center;
+        transform: scale(0.89);
+        margin-top: -109%;
+        position: relative;
+        border-radius: 0px;
+        left: -82px;
+      }
+
+      .modal {
+        top: 28px;
+        max-width: 560px;
+        padding: 20px;
+        border-radius: 5px;
+        height: 523px;
+        margin-top: 91px;
+      }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1400px) {
+    .row {
+        left: -100px;
+        width: 1560px;
+        display: flex;
+        flex-wrap: none;
+        justify-content: center;
+        left: -36px;
+        margin-top: -109%;
+        position: relative;
+        border-radius: 0px;
+        left: -109px;
+        margin-top: -133%;
+        top: -107px;
+      }
+      .database-post {
+        width: 750px;
+      }
+
+      .row .col.m6 {
+        width: 162%;
+        margin-left: auto;
+        left: auto;
+        right: auto;
+      }
+
+      .modal {
+        top: 28px;
+        max-width: 560px;
+        padding: 20px;
+        border-radius: 5px;
+        height: 523px;
+        margin-top: 91px;
+      }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1300px) {
+
+    .modal {
+        top: 28px;
+        max-width: 560px;
+        padding: 20px;
+        border-radius: 0px;
+        height: 523px;
+        margin-top: 91px;
+      }
+      .row {
+        left: -100px;
+        width: 1560px;
+        display: flex;
+        flex-wrap: none;
+        justify-content: center;
+        left: -36px;
+        margin-top: -109%;
+        position: relative;
+        border-radius: 0px;
+        left: -233px;
+        margin-top: -310%;
+        top: 186px;
+        transform: scale(0.80);
+      }
+.database-post {
+    width: 750px;
+  }
+
+  .row .col.m6 {
+    width: 162%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+  }
+
+  @media screen and (min-width: 1100px) and (max-width: 1200px) {
+    .row {
+        left: -100px;
+        width: 1560px;
+        display: flex;
+        flex-wrap: none;
+        justify-content: center;
+        left: -36px;
+        margin-top: -109%;
+        position: relative;
+        border-radius: 0px;
+        left: -229px;
+        margin-top: -373%;
+        top: 355px;
+        transform: scale(0.80);
+      }
+
+.database-post {
+    width: 750px;
+  }
+
+  .row .col.m6 {
+    width: 162%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+
+  .modal {
+    top: 28px;
+    max-width: 560px;
+    padding: 20px;
+    border-radius: 0px;
+    height: 523px;
+    margin-top: 91px;
+  }
+  }

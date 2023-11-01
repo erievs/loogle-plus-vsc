@@ -1,0 +1,207 @@
+
+.body {
+    background-color: #ECEFF1;
+}
+/* Custom styles for sidenav */
+.community-sidebar {
+    border: none;
+    box-shadow: none;
+    position: fixed;
+    left: 0;
+    height: 100%;
+    background-color: #FFFF;
+    color: black;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    width: 22%;
+
+}
+
+.members {
+    padding-left: 5%;
+    color: #9e9e9e; 
+}
+
+.c-desc { 
+    padding-left: 5%;
+    color: #9e9e9e; 
+    text-align: top;
+    height: auto;
+    font-size: 20px;
+}
+
+
+.c-name {
+    height: 20%;
+    height: auto;
+    padding-left: 1%;
+    padding-right: 10px;
+    font-size: 34px;
+    display: block; /* Use "block" instead of "inline-block" */
+    white-space: normal; /* Use "normal" to wrap at word boundaries */
+
+}
+
+
+.search-bar {
+    background-color: #31995F;
+}
+
+.buttons {
+  top: 5%;
+  position: relative;
+  left: 5%;
+}
+
+.post-button {
+    background-color: #d34836;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+.post-button:hover {
+    background-color: #b83224;
+}
+
+.row {
+    height: 100%;
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+.container {
+    height: 100%;
+}
+
+.imgcon img {
+    width: fill;
+    height: fill;
+
+}
+.dropdown-trigger {}
+
+.dropdown-trigger {
+
+}
+
+.imgcon .dropdown-container .dropdown-trigger {
+
+  color: white;
+  cursor: pointer;
+  top: 30px;
+  right: -18px;
+}
+.editCommunityModal {
+    background-color: #FFFF;
+
+}
+
+
+.imgcon img {
+  width: fill;
+  height: 300px;
+  display: block;
+}
+
+
+.c-desc p {
+    /* Style your paragraph as needed */
+    margin: 0; /* Remove default margins */
+}
+.container {
+  height: 100%;
+
+  width: 90%;
+}
+
+.dropdown-content {
+    left: 80px; top: -70px;
+}
+
+.header {
+        background-color: #ccc; /* Set your header background color */
+        height: 50px; /* Set your header height */
+        position: relative; /* Enable relative positioning */
+    }
+
+.container {
+   
+        top: 22%; /* Move the content 5% down from the top of the nearest positioned ancestor, which is the header in this case */
+    }
+
+ .custom-input-container {
+        width: 650px;
+  }
+
+    .container {
+  position: none;
+  top: 22%;
+  height: 100%
+}
+
+.container {
+  margin-top: -55vh;
+}
+
+.c-name {
+  height: 20%;
+  height: 210px;
+  padding-left: 1%;
+  padding-right: 10px;
+  font-size: 34px;
+  display: block;
+  white-space: normal;
+}
+.row {
+  min-height: 600px; /* Set a minimum height */
+  max-height: 1050px; /* Set a maximum height */
+  overflow-y: auto; /* Display a scroll bar when content exceeds the maximum height */
+}
+
+
+@media screen and (max-width: 1368px) {
+
+    .row {
+  min-height: 600px; /* Set a minimum height */
+  max-height: 450px; /* Set a maximum height */
+  overflow-y: auto; /* Display a scroll bar when content exceeds the maximum height */
+}
+
+
+h1 {
+  font-size: 3.2rem;
+}
+
+.community-sidebar {
+  padding-top: 60px;
+}
+
+.imgcon img {
+  width: fill;
+  height: 181px;
+  display: block;
+}
+
+.imgcon .dropdown-container .dropdown-trigger {
+  color: white;
+  cursor: pointer;
+  top: 33px;
+  right: -23px;
+}
+
+.imgcon .dropdown-container {
+  position: absolute;
+  top: -51px;
+  right: 10px;
+}
+}
